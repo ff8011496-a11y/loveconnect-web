@@ -6,16 +6,25 @@
   <title>LoveConnect</title>
 
   <style>
-    body{
+    *{
       margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
       font-family:Arial,sans-serif;
-      background:#ff4d6d;
-      color:white;
+      background:linear-gradient(135deg,#ff4d6d,#ff8fab);
       display:flex;
       justify-content:center;
       align-items:center;
       height:100vh;
+      color:#fff;
+    }
+
+    .container{
       text-align:center;
+      padding:30px;
     }
 
     h1{
@@ -25,28 +34,39 @@
 
     p{
       font-size:18px;
+      margin-bottom:25px;
     }
 
     button{
-      margin-top:20px;
-      padding:12px 25px;
+      padding:15px 35px;
       font-size:18px;
       border:none;
       border-radius:30px;
-      background:white;
+      background:#fff;
       color:#ff4d6d;
       cursor:pointer;
+      transition:.3s;
+    }
+
+    button:hover{
+      background:#ffe5ec;
     }
   </style>
 </head>
 <body>
 
-<div>
+<div class="container">
   <h1>❤️ LoveConnect</h1>
   <p>Find your perfect match.</p>
 
-  <button>Get Started</button>
+  <button onclick="startApp()">Get Started</button>
 </div>
+
+<script>
+function startApp(){
+  alert("Welcome to LoveConnect ❤️");
+}
+</script>
 
 </body>
 </html>
